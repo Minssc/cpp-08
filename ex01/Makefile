@@ -6,15 +6,15 @@
 #    By: minsunki <minsunki@student.42seoul.kr>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/15 13:09:39 by minsunki          #+#    #+#              #
-#    Updated: 2022/03/31 13:07:01 by minsunki         ###   ########seoul.kr   #
+#    Updated: 2022/03/31 20:01:21 by minsunki         ###   ########seoul.kr   #
 #                                                                              #
 # **************************************************************************** #
 
-NAME			=		ex00
+NAME			=		ex01
 
 SRCF			=		.	
 
-FIL_M			=		main
+FIL_M			=		main Span
 
 SRCS_M			=		$(addsuffix .cpp, $(FIL_M))
 
