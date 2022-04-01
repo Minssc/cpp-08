@@ -6,7 +6,7 @@
 /*   By: minsunki <minsunki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 19:55:29 by minsunki          #+#    #+#             */
-/*   Updated: 2022/03/31 22:10:23 by minsunki         ###   ########seoul.kr  */
+/*   Updated: 2022/04/01 15:28:40 by minsunki         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,20 +33,31 @@ int main()
 	Span spe;
 	Span sp(10000);
 	Span spt(100);
+	Span spp(10000);
 
 	std::srand(std::time(NULL));
 
 	for (int i = 0; i < 10000 ; ++i)
-		sp.addNumber(rand() % 100000000);
+		sp.addNumber((rand() % 1000000000) - 2000000000);
 
 	std::cout << "shortest span: " << sp.shortestSpan() << std::endl;
 	std::cout << "longest span: " << sp.longestSpan() << std::endl;
+	std::cout << std::endl;
 	
+	for (int i = 0; i < 9999; ++i)
+		spp.addNumber(0);
+	spp.addNumber(42);
+
+	std::cout << "shortest span: " << spp.shortestSpan() << std::endl;
+	std::cout << "longest span: " << spp.longestSpan() << std::endl;
+	std::cout << std::endl;
+
 	for (int i = 0; i < 100; ++i)
-		spt.addNumber(i * 10);
+		spt.addNumber(i * 10 - 2000);
 	
 	std::cout << "shortest span: " << spt.shortestSpan() << std::endl;
 	std::cout << "longest span: " << spt.longestSpan() << std::endl;
+	std::cout << std::endl;
 
 	try
 	{
