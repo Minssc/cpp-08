@@ -12,6 +12,7 @@
 
 #include "MutantStack.hpp"
 #include <vector>
+#include <list>
 
 static void	test_rit()
 {
@@ -68,6 +69,32 @@ int main()
 		std::cout << *it << std::endl;
 		++it;
 	}
+
+	std::cout << "trying as list" << std::endl;
+	{
+		std::list<int> li;
+		li.push_back(5);
+		li.push_back(17);
+		std::cout << li.back() << std::endl;
+		li.pop_back();
+		std::cout << li.size() << std::endl;
+		li.push_back(3);
+		li.push_back(5);
+		li.push_back(737);
+		li.push_back(0);
+		std::list<int>::iterator it = li.begin();
+		std::list<int>::iterator ite = li.end();
+		++it;
+		--it;
+		while (it != ite)
+		{
+			std::cout << *it << std::endl;
+			++it;
+		}
+		
+	}
+
+	std::cout << std::endl;
 	std::stack<int> s(mstack);
 
 	test_rit();
