@@ -43,6 +43,13 @@ const Span	&Span::operator =(const Span &s)
 	return (*this);
 }
 
+int	&Span::operator [](const unsigned int &idx)
+{
+	if (_idx <= idx)
+		throw std::runtime_error(std::string("Index out of range"));
+	return (_array[idx]);
+}
+
 const int	&Span::operator [](const unsigned int &idx) const
 {
 	if (_idx <= idx)

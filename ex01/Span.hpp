@@ -34,6 +34,7 @@ class Span
 		~Span();
 
 		const Span	&operator =(const Span &s);
+		int			&operator [](const unsigned int &idx);
 		const int	&operator [](const unsigned int &idx) const;
 
 		int	shortestSpan();
