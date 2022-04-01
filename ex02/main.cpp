@@ -71,5 +71,8 @@ int main()
 	std::stack<int> s(mstack);
 
 	test_rit();
+
+	// MutantStack<int>::const_iterator cit = mstack.cbegin();
+	// *cit = 0;
 	return 0;
 }
