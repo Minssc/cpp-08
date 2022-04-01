@@ -6,7 +6,7 @@
 /*   By: minsunki <minsunki@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 13:13:27 by minsunki          #+#    #+#             */
-/*   Updated: 2022/03/31 22:16:28 by minsunki         ###   ########seoul.kr  */
+/*   Updated: 2022/04/01 13:15:22 by minsunki         ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,6 @@ int	Span::shortestSpan()
 	{
 		std::sort(_array, _array + _idx);
 		_sorted = true;
-
 	}
 	int	ret = _array[1] - _array[0];
 
